@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Lucas André</title>  
     <meta name="description" content="Sou aluno do SENAI, gosto de jogar bola e tenho uma cachorra chamada Amélia.">
-    <meta property="og:description" content="Sou aluno do SENAI, gosto de jogar bola e tenho uma cachorra chamada Amélia.">
+    <meta property="og:description" content=">Sou Aluno do SENAI, gosto de ler, jogar e escutar musica.">
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/4234986?s=460&v=4">
     <style>
       body {
@@ -42,6 +42,7 @@
       }
       header {
         color: black;
+
       }
       header .photo img {
         border-radius: 100%;
@@ -93,16 +94,26 @@
         <h2 aria-hidden="true">Contact</h2>
         <div>Email: <a href="lucas.da.rocha25@hotmail.com">me@Lucas.da.rocha</a></div>
         <div>Github: <a href="https://github.com/luhkita" target="_blank" rel="noopener">@luhkita</a></div>
-        <div>Linkedin: <a href="https://www.linkedin.com/in/realronchi/" target="_blank" rel="noopener">Fabrício Ronchi</a></div>
+        <div>Linkedin: <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">Lucas André</a></div>
       </section>
       <section class="tags">
+
         <h2>Experiência</h2>
-        <span class="tag">angularJS</span>
-        <span class="tag">deployment</span>
-        <span class="tag">javascript</span>
-        <span class="tag">JAVA</span>
+        <span class="tag">Curso ADM</span>
+        <span class="tag">Comercio exterior</span>
+        
+        
       </section>
     </main>
-      <footer>Adicionar a data aqui...</footer>
+<footer id="tempo"> </footer>
+    <script>
+      var myVar = setInterval(myTimer, 1000);
+      function myTimer(){
+      var d = new Date();
+      completo = d.getDate() + "/" + (d.getMonth ()+1) + "/" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+      document.getElementById("tempo").innerHTML = completo;
+    }
+    </script>
+          </footer>
   </body>
 </html>
